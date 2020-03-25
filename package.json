@@ -2,8 +2,11 @@
   "name": "practice-util",
   "version": "1.0.0",
   "description": "practice creating node module",
-  "main": "index.js",
+  "main": "dist/node-common-util.js",
   "scripts": {
+    "build": "npm run build:umd && npm run build:umd:min",
+    "build:umd": "cross-env NODE_ENV=development webpack src/index",
+    "build:umd:min": "cross-env NODE_ENV=production webpack src/index.js -o dist/node-common-util.min.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +30,10 @@
   },
   "homepage": "https://github.com/dustinblainemyers/node-practice-utility#readme",
   "devDependencies": {
-    "webpack": "^4.42.1"
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
