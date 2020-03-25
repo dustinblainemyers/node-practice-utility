@@ -1,0 +1,32 @@
+{
+  "name": "practice-util",
+  "version": "1.0.0",
+  "description": "practice creating node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dustinblainemyers/node-practice-utility.git"
+  },
+  "keywords": [
+    "utility",
+    "hire",
+    "this",
+    "guy",
+    "node",
+    "expert",
+    "loves",
+    "cinnabuns"
+  ],
+  "author": "Dustin Myers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dustinblainemyers/node-practice-utility/issues"
+  },
+  "homepage": "https://github.com/dustinblainemyers/node-practice-utility#readme",
+  "devDependencies": {
+    "webpack": "^4.42.1"
+  }
+}
